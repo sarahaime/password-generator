@@ -1,2 +1,4 @@
 # password-generator
-Django website that you can use when you need a nice random password. 
+A website that generate a nice random password. 
+
+The whole purpose of this website is to get you to understand the basics of Django.
