@@ -1,0 +1,40 @@
+# Python configuration files
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Environment files
+.env
+*.env
+
+# Database files
+db.sqlite3
+
+# Migration files
+migrations/
+
+# Cache files
+*.log
+*.pot
+*.pyc
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# Test files
+coverage/
+*.cover
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# System files
+.DS_Store
+Thumbs.db
+*.sqlite3
