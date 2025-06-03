@@ -17,7 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from generator_app import views
 urlpatterns = [
-    path('', views.home),
-    path('password/', views.password),
+    path('', views.home, name='home'),
+    path('password/', views.password, name='password'),
+    path('about/', views.about, name='about'),
     path('admin/', admin.site.urls),
 ]

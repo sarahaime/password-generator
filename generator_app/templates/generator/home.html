@@ -1,0 +1,25 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+<section class="container mt-4">
+  <h1 class="text-center">Secure Password Generator</h1>
+  <form action="{% url 'password' %}" class="p-4 border rounded shadow">
+      <div class="mb-0 row">
+          <label for="length" class="form-label col-auto">Password Length</label>
+          <input type="range" name="length" class="form-range col" id="length" min="6" max="42" value="10" oninput="this.nextElementSibling.value = this.value">
+          <output class="col-auto">10</output>
+      </div>
+      <div class="form-check">
+          <input type="checkbox" name="uppercase" class="form-check-input" id="uppercase"/>
+          <label for="uppercase" class="form-check-label">Uppercase</label>
+      </div>
+      <div class="form-check">
+          <input type="checkbox" name="numbers" class="form-check-input" id="numbers"/>
+          <label for="numbers" class="form-check-label">Numbers</label>
+      </div>
+      <div class="form-check">
+          <input type="checkbox" name="special_characters" class="form-check-input" id="special_characters"/>
+          <label for="special_characters" class="form-check-label">Special Characters</label>
+      </div>
+      <button type="submit" class="btn btn-warning mt-3">Generate Password <i class="fas fa-key"></i></button>
+  </form>
+  <a href="{% url 'about' %}" class="mt-4 btn btn-secondary"> About page </a>
+</section>
