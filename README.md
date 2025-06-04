@@ -1,4 +1,4 @@
-# Password Generator
+# Django Password Generator
 
 ## Description
 
